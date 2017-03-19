@@ -41,7 +41,7 @@ public class PersonController
     }
 
     @RequestMapping(value = "/person", method = RequestMethod.GET)
-    public Person getPerson( @RequestParam long id )
+    public Person getPerson( @RequestParam(value = "id") long id )
     {
         for( Person person : people )
         {
